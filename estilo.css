@@ -1,0 +1,615 @@
+
+@import "transition-style";
+
+*{
+    font-family: quicksand, sans-serif;
+}
+
+
+
+
+/* 
+/////////CONTENEDOR DE TODO///// */
+    .contenedor{
+        display: grid;
+
+        grid-gap: 10px;
+        grid-template-columns:repeat( 12,1fr);
+        grid-template-rows: repeat(7,1fr);
+
+        font-family: quicksand, sans-serif;
+
+    }
+    
+
+/* ////////CONTENEDOR IMAGEN DE FONDO/////////// */
+
+    .contenedor_imagen{
+        
+
+        background-image: url("./imagenes/fondo.png");
+        background-size:100% auto;
+        background-repeat: no-repeat;
+
+        color: #ffffffb2;
+
+        display: grid;
+
+        grid-column-start: 1;
+        grid-column-end: 14;
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        
+    }
+
+    .contenedor_logo{
+        
+        display: grid;
+
+        justify-items:center ;
+
+
+    }
+
+    .contenedor_titulo{
+        display: grid;
+
+        justify-items: center;
+
+        font-size:1vw;
+
+        margin:1em;
+
+        text-shadow: black 0.1em 0.1em 0.3em;
+
+        
+
+        
+    }
+
+    .logo{
+        
+        
+        max-width: 30%;
+        --transition__duration: 1.50s;            /* default: 2.5s */
+        --transition__easing: linear;     /* default: cubic-bezier(.25, 1, .30, 1) */
+        --transition__delay: 1.70s;  
+
+        opacity: 90%;
+        
+          
+    }
+
+    
+    
+
+
+/* ////CONTENEDOR DE INFO DE ALTA GRACIA//////// */
+
+    .contenedor_texto{
+        display: grid;
+
+        grid-column-start: 1;
+        grid-column-end: 14;
+
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+
+        font-size: 1vw;
+
+        justify-items: left;
+
+ 
+
+        background-color: #ffffff;
+
+        
+        
+
+    }
+
+/* ////////TITULO ALTA GRACIA///////// */
+
+    .tit{
+
+        justify-self: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+
+        font-size: 1vw;
+
+        color:#143474;
+        --transition__duration: 1.50s;            /* default: 2.5s */
+        --transition__easing: linear;     /* default: cubic-bezier(.25, 1, .30, 1) */
+        --transition__delay: 1.85s;  
+    }
+
+/* //////TEXTO SOBRE AG///////// */
+
+    .text{
+        margin-left: 1em;
+        margin-right: 1em;
+       
+        
+
+        justify-self: left;
+        text-align: left;
+        align-items: center;
+        display: flex;
+
+
+        
+
+        padding-left: 1em;
+
+        
+
+    }
+  /* CONTENEDOR DEL CARROUSEL */
+    .contenedor_Carrousel{
+        display: grid;
+
+        grid-column-start: 1;
+        grid-column-end: 14;
+
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        background-image: url(./imagenes/sierras2.png);
+        background-size: 100%, auto;
+        background-attachment: fixed, fixed;
+        background-repeat: no-repeat;
+
+        color: #f5f5f5;
+
+        justify-self: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .texto{
+
+        justify-self: left;
+        
+        align-items: center;
+        display: flex;
+
+        font-size: 1vw;
+        
+        --transition__duration: 2.00s;            /* default: 2.5s */
+        --transition__easing: linear;     /* default: cubic-bezier(.25, 1, .30, 1) */
+        --transition__delay: 2.70s; 
+
+        text-shadow: black 0.1em 0.1em 0.3em;
+    }
+
+    #carouselExampleControls{
+        max-width: 30%;
+  
+    }
+        
+
+
+
+/* //////////CONTENEDOR LUGARES PARA VISITAR/////// */
+    .contenedor_lugares_visitar{
+        display: grid;
+
+        grid-column-start: 1;
+        grid-column-end: 14;
+
+        grid-row-start: 4;
+        grid-row-end: 5;
+
+        justify-content: center;
+
+        
+        align-items: center;
+        display: flex;
+
+        
+
+
+
+    }
+
+    /*     
+//////TITULO LUGARES PARA VISITAR/////// */
+    .lugares{
+        letter-spacing: 5px;
+
+        font-size: 1vw;
+        font-weight:bold;
+
+        text-align: center;
+
+       
+
+        --transition__duration: 2.00s;            /* default: 2.5s */
+        --transition__easing: linear;     /* default: cubic-bezier(.25, 1, .30, 1) */
+        --transition__delay: 3s; 
+
+        color: #a05424;
+
+
+
+        
+    }
+
+    /* /////////IMAGENES LUGARES PARA VISITAR//////////////// */
+
+    .tarjetas{
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 12;
+
+        grid-row-start: 5;
+        grid-row-end:8;
+
+        
+        
+        grid-template-columns:repeat( 3,1fr);
+        grid-template-rows: repeat(4,1fr);
+
+     
+        place-content: center;
+
+        margin-top: 1em;
+
+        
+
+        --transition__duration: 1.75s;            /* default: 2.5s */
+        --transition__easing: ease-in-out;     /* default: cubic-bezier(.25, 1, .30, 1) */
+        --transition__delay: 4.50s;   
+    
+
+        
+
+
+    }
+
+    .fondo{
+        max-width: 100%;
+        
+    }
+
+    .card {
+        
+        max-width: 100%;
+        position: relative;
+        background: transparent;
+
+        color: #f5f5f5;
+
+        padding: 0.5em;
+        opacity: 5;
+
+        border-color: transparent
+
+        
+
+        
+    }
+
+    .card-img {
+
+        max-width: 100%;
+        
+    
+    }
+
+    .card-info {
+
+        
+        max-width: 100%;
+        bottom: 0;
+        padding: 1rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        background:rgba(14, 13, 13, 0.507);
+        visibility:hidden;
+
+        
+        
+        
+    }
+
+    
+    .fa-arrow-right{
+        color: #f5f5f5;
+
+        text-decoration: none;
+
+        font-size: 1vw;
+    }
+
+    .fa-arrow-right:hover{
+        color: #f5f5f5;
+
+        text-decoration: none;
+
+        
+    }
+
+    
+
+    /*Text*/
+    p {
+        line-height: 140%;
+        --transition__duration: 0.75s;            /* default: 2.5s */
+        --transition__easing: ease-in-out;     /* default: cubic-bezier(.25, 1, .30, 1) */
+        --transition__delay: 0.70s;               
+    }
+
+    .text-title {
+        font-weight: 900;
+        font-size: 1vw;
+
+       
+    }
+
+    
+    .card:hover .card-icon {
+        opacity: 1;
+        transform: translateX(20%);
+    }
+
+    .card:hover .card-info {
+        opacity: 1;
+        
+        visibility:visible;
+        max-width:100%;
+        
+
+        -ms-word-break: break-all;
+        word-break: break-all;
+        
+        
+
+
+        
+    }
+
+    .card-img:hover{
+       filter: brightness(70%);
+        
+    }
+
+
+        /* ///////FIN TARJETAS///////// */
+
+
+      
+ /* PIE DE LA PAGINA */
+
+    .pie {
+        display: grid;
+
+        grid-column-start: 1;
+        grid-column-end: 14;
+
+        grid-row-start: 12;
+        grid-row-end:13;
+
+        margin-top: 0.5em;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        background-color: rgb(15, 15, 15);
+        background-size: cover;
+        color:#CDCFD0;
+        cursor: pointer;
+
+    }
+
+    .cont-pie{
+       
+        font-size: 0.1vw;
+
+    }
+
+    .cont-pie i{
+        margin: 1em;;
+
+    }
+
+/* !!!!!!!!!!!!! MEDIA QUERIES 1 !!!!!!!!!!!!!! */
+    @media screen and (min-width:320px){
+
+    
+        .contenedor_titulo{
+            font-size: 4vw;
+    
+            margin-top: -3em;
+        }
+        .tit{
+    
+            justify-self: center;
+            text-align: center;
+            align-items: center;
+            display: flex;
+    
+            font-size:5vw;
+    
+            color:#143474;
+            
+        }
+        .text{
+            font-size: 2.8vw;
+        }
+        .contenedor_Carrousel{
+            justify-self: center;
+            text-align: center;
+            align-items: center;
+            display: flex;
+    
+        }
+    
+        .texto{
+            font-size: 4vw;
+            margin: 2em;
+        }
+    
+        #carouselExampleControls{
+            margin:2em;
+        }
+    
+        .lugares{
+            font-size: 5vw;
+        }
+    
+        .tarjetas{
+    
+            margin-top: -7em;
+        }
+    
+        .fa-arrow-right{
+            font-size: 2vw;
+        }
+    
+        .text-title{
+            font-size: 2vw;
+        }
+    
+    
+        
+        .cont-pie{
+            font-size: 3vw;
+        }
+    
+        
+    
+        
+    
+        
+    }
+
+/* !!!!!!!!!!!!! MEDIA QUERIES 2 !!!!!!!!!!!!!! */
+
+@media screen and (min-width:768px){
+
+    
+    .contenedor_titulo{
+        font-size: 4vw;
+
+        margin-top: -3em;
+    }
+    .tit{
+
+        justify-self: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+
+        font-size:5vw;
+
+        color:#143474;
+        
+    }
+    .text{
+        font-size: 2.8vw;
+    }
+    .contenedor_Carrousel{
+        justify-self: center;
+        text-align: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .texto{
+        font-size: 4vw;
+        margin: 2em;
+    }
+
+    #carouselExampleControls{
+        margin:2em;
+    }
+
+    .lugares{
+        font-size: 6vw;
+    }
+
+    .tarjetas{
+
+        margin-top: -7em;
+    }
+
+    .fa-arrow-right{
+        font-size: 2vw;
+    }
+
+    .text-title{
+        font-size: 2vw;
+    }
+
+
+    
+    .cont-pie{
+        font-size: 3vw;
+    }
+
+    
+
+    
+
+    
+}
+
+/* !!!!!!!!!!!!! MEDIA QUERIES 2 !!!!!!!!!!!!!! */
+ @media screen and (min-width:1024px){
+
+    .contenedor_titulo{
+        margin-top: -5em;
+    }
+
+    .tit{
+        font-size: 6vw;
+
+        
+    }
+
+    .text{
+        font-size: 2.3vw;
+
+        margin: 1em;
+    }
+
+    .lugares{
+        font-size: 5vw;
+    }
+
+    .cont-pie{
+        font-size: 1.5vw;
+    }
+    
+    
+
+    
+
+
+}
+
+
+ /* !!!!!!!!!!!!!!!!!! MEDIA QUERIES 3!!!!!!!!!!!!!!! */
+
+ @media screen and (min-width:1280px) {
+    .contenedor_titulo{
+        margin-top: -3em;
+    }
+
+    .cont-pie{
+        font-size: 1.5vw;
+    }
+ 
+ } 
