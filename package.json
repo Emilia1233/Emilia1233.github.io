@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@loadingio/transition.css": "^3.0.0",
-    "animate.css": "^4.1.1",
-    "transition-style": "^0.1.3"
-  }
-}
